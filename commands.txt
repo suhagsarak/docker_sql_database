@@ -1,0 +1,15 @@
+
+
+	#Build image with Dockerfile in current folder
+	
+	docker image build -t <database_image_name> .
+
+
+	#Start container with image
+
+	docker container run -itd --name <database_container_name> -p 5555:3306 <database_image_name>
+
+
+	#Access database promt of container
+
+	mysql -u root --port 5555 --protocol tcp -proot db
