@@ -1,8 +1,8 @@
 
-DROP DATABASE IF EXISTS db;
+/*DROP DATABASE IF EXISTS db;
 
 create database db;
-
+*/
 use db;
 
 
